@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<h2>Hello, test your memory with this game :)</h2>
+<button class="help" onclick="showhelp()">Push if you need help</button>
+<button class="starTime" onclick="startTimer()">Start the game</button>
+
+<div id="game-board">
+  <div class="row">
+    <button class="card" onclick="flipCard(0)"></button>
+    <button class="card" onclick="flipCard(1)"></button>
+    <button class="card" onclick="flipCard(2)"></button>
+    <button class="card" onclick="flipCard(3)"></button>
+  </div>
+  <div class="row">
+    <button class="card" onclick="flipCard(4)"></button>
+    <button class="card" onclick="flipCard(5)"></button>
+    <button class="card" onclick="flipCard(6)"></button>
+    <button class="card" onclick="flipCard(7)"></button>
+  </div>
+  <div class="row">
+    <button class="card" onclick="flipCard(8)"></button>
+    <button class="card" onclick="flipCard(9)"></button>
+    <button class="card" onclick="flipCard(10)"></button>
+    <button class="card" onclick="flipCard(11)"></button>
+  </div>
+  <div class="row">
+    <button class="card" onclick="flipCard(12)"></button>
+    <button class="card" onclick="flipCard(13)"></button>
+    <button class="card" onclick="flipCard(14)"></button>
+    <button class="card" onclick="flipCard(15)"></button>
+  </div>
+</div>
+
+<button class="restart" onclick="restart()">Restart the game</button>
+<script src="js/app.js"></script>
+</body>
+</html>

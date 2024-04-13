@@ -1,0 +1,56 @@
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: #ccc;
+  border: 1px solid #000;
+  display: inline-block;
+  cursor: pointer;
+  /* Corrected file name */
+  background-size: cover;
+
+  text-align: center; /* Center the content */
+}
+.card.back-image {
+  /*!* Style for the card back *!*/
+  /*background-image: url("../back.jpg"); !* Replace with your back image path *!*/
+}
+
+.card.front-image {
+  /* Style for the card front (where the actual image is displayed) */
+  transform: rotateY(180deg); /* Flips the card to reveal the front image */
+  background-image: url("pic1.jpg"); /* Replace with your first image path */
+}
+
+.matched {
+  /* Style for matched cards (optional) */
+  opacity: 0.5; /* Makes the card semi-transparent to indicate a match */
+  cursor: default; /* Disables pointer cursor on matched cards */
+}
+
+.flipped {
+  background-image: none; /* Remove back image when flipped */
+}
+
+.matched {
+  visibility: hidden;
+}
+
+body {
+  background-color: bisque;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.help {
+  background-color: coral;
+}
+
+.restart {
+  border-style: wave;
+  display: block;
+  margin: 0 auto;
+}
